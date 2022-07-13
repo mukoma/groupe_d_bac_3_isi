@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scrollbar-width: thin;
+}
+
+header {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, rgba(46, 60, 185, 0.5), rgba(68, 68, 68, .5)), url(../images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+.logo_container {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    top: .5rem;
+    left: .5rem;
+    transform: translateY(-30%);
+}
+
+.logo_container_image {
+    height: inherit;
+    width: inherit;
+}
+
+.nature {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    animation-name: nature;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+@keyframes nature {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+main {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cart_container {
+    min-height: 50vh;
+    height: auto;
+    overflow: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .6rem;
+}
+
+.carts {
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    border-radius: .5rem;
+    transition: all .4s ease-in-out;
+}
+
+.cart1 {
+    background-image: url(../images/img2.jpg);
+}
+
+.cart2 {
+    background-image: url(../images/img3.jpg);
+}
+
+.cart3 {
+    background-image: url(../images/img4.jpg);
+}
+.heading_2 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 0.5rem;
+}
+
+.carts:hover {
+    transform: translateY(-1rem);
+}
+
+.button {
+    padding: 10px 40px;
+    margin: 10px;
+}
+
+@media screen and (max-width:850px) {
+    main {
+        height: 50vh;
+    }
+    .cart_container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    html {
+        font-size: 10px;
+    }
+    main {
+        min-height: 100vh;
+    }
+    .cart_container {
+        height: 100vh;
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+}
