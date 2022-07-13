@@ -20,3 +20,27 @@ header {
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
+.logo_container {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    top: .5rem;
+    left: .5rem;
+    transform: translateY(-30%);
+}
+
+.logo_container_image {
+    height: inherit;
+    width: inherit;
+}
+
+.nature {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    animation-name: nature;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
