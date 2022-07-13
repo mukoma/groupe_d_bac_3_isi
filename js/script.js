@@ -1,0 +1,5 @@
+const cart_container = document.querySelector(".cart_container")
+const cart1 = document.querySelector(".cart1")
+const cart2 = document.querySelector(".cart2")
+const cart3 = document.querySelector(".cart3")
+const clickMe = document.querySelector("#click_me")
