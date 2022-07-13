@@ -20,3 +20,9 @@ function makeCartColors() {
     cart_container.append(div2)
     cart_container.append(div3)
 }
+clickMe.addEventListener("click", () => {
+    makeCartColors()
+})
+cart_container.addEventListener("scroll", () => {
+    makeCartColors()
+});
