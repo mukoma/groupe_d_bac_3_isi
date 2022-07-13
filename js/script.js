@@ -25,4 +25,4 @@ clickMe.addEventListener("click", () => {
 })
 cart_container.addEventListener("scroll", () => {
     makeCartColors()
-});
+})
