@@ -54,3 +54,45 @@ header {
         transform: translateY(0);
     }
 }
+main {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cart_container {
+    min-height: 50vh;
+    height: auto;
+    overflow: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .6rem;
+}
+
+.carts {
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    border-radius: .5rem;
+    transition: all .4s ease-in-out;
+}
+
+.cart1 {
+    background-image: url(../images/img2.jpg);
+}
+
+.cart2 {
+    background-image: url(../images/img3.jpg);
+}
+
+.cart3 {
+    background-image: url(../images/img4.jpg);
+}
