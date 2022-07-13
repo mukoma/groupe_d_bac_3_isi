@@ -96,3 +96,41 @@ main {
 .cart3 {
     background-image: url(../images/img4.jpg);
 }
+.heading_2 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 0.5rem;
+}
+
+.carts:hover {
+    transform: translateY(-1rem);
+}
+
+.button {
+    padding: 10px 40px;
+    margin: 10px;
+}
+
+@media screen and (max-width:850px) {
+    main {
+        height: 50vh;
+    }
+    .cart_container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    html {
+        font-size: 10px;
+    }
+    main {
+        min-height: 100vh;
+    }
+    .cart_container {
+        height: 100vh;
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+}
